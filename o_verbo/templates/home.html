@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Verse Memorization App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Verse Memorization App</h1>
+    <div class="search">
+        <label for="reference">Search by reference:</label>
+        <input type="text" id="reference" name="reference" placeholder="e.g. Genesis 1:3">
+        <button onclick="search()">Search</button>
+    </div>
+    <div class="filters">
+        <label for="book">Filter by book:</label>
+        <select id="book" name="book"></select>
+        <label for="chapter">Filter by chapter:</label>
+        <select id="chapter" name="chapter"></select>
+        <label for="verse">Filter by verse:</label>
+        <select id="verse" name="verse"></select>
+        <label for="bible_version">Filter by bible version:</label>
+        <select id="bible_version" name="bible_version"></select>
+    </div>
+    <div class="output">
+        <p id="text"></p>
+        <div id="memorize">
+            <button onclick="startMemorize()">Start Memorizing</button>
+            <p id="memorize-text"></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
